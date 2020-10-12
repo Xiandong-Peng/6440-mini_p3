@@ -20,7 +20,7 @@
     </header>
 
     <main class="main">
-      <div class="main-overview">
+      <div class="main-overview" >
         <div class="small-card">
           <div>Height</div>
           <div class="ob-value" id="height">undefined</div>
@@ -47,17 +47,29 @@
         </div>
       </div>
 
-      <div class="big-card">
-        <div class="card">
+      <div class="big-card" >
+        <div class="card" style="background-color:#336666;">
           <div class="title">
-            Add an Annotation for the Weight Observation
+            Prediabetes indicators
           </div>
-        <span>  <input class="annotation-box" id="annotation">
-          <button class="annotation-button" id="add">Add</button></span>
-          <div class="annotations">
-          Latest Annotation
-          <li id="note">No annotations</li>
+          <ol>
+            <li>Age ( >45 --> +1)</li>
+
+            <div class="banner-value" id="age">undefined</div>
+            <li><div>BMI ( >25 --> +1)</div>
+                <div class="ob-value" id="bmi">undefined</div>
+            </li>
+            <li>LDL Level ( >130 --> +1)
+                <div class="ob-value" id="ldl_level">undefined</div>
+            </li>
+            <li>HDL Level ( <50 --> +1)
+                <div class="ob-value" id="hdl_level">undefined</div>
+            </li>
+          </ol>
+          <div ><b>
+            Prediabetes risk level:</b>
           </div>
+          <font color="red"><div class="ob-value" id="riskLevel">undefined</div></font>
         </div>
 
         <div class="card">
@@ -75,7 +87,7 @@
   <script src="./lib/js/get-data.js"></script>
 
   <!-- uncomment below script and comment above script to switch for easy local testing -->
-  <!-- <script src="./lib/js/get-data-test.js"></script> -->
+<!--  <script src="./lib/js/get-data-test.js"></script>-->
 </body>
 
 </html>
